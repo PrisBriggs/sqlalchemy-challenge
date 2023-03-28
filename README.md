@@ -24,26 +24,26 @@ Part 1: Analyzing and Exploring the Climate Data
 
     Precipitation Analysis
     In this section:
-    * I found the most recent date in the dataset.
-    * Using that date, I got the previous 12 months of precipitation data by querying the previous 12 months of data.
-    * I plotted the results by using the DataFrame and a bar chart.
-    * Finally, I printed the summary statistics for the precipitation data.
+    - I found the most recent date in the dataset.
+    - Using that date, I got the previous 12 months of precipitation data by querying the previous 12 months of data.
+    - I plotted the results by using the DataFrame and a bar chart.
+    - Finally, I printed the summary statistics for the precipitation data.
 
     Station Analysis
     In this section:
-    * I designed a query to calculate the total number of stations in the dataset.
-    * I designed a query to find the most-active stations (that is, the stations that have the most rows). 
-    * I designed a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
-    * Finally, I plotted the results as a histogram.
+    - I designed a query to calculate the total number of stations in the dataset.
+    - I designed a query to find the most-active stations (that is, the stations that have the most rows). 
+    - I designed a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
+    - Finally, I plotted the results as a histogram.
 
 Part 2: Designing My Climate App
     In this section, I designed a Flask API based on the queries that I developed. I used the following routes:
-    * / : This is the homepage, where all the available routes are listed.
-    * /api/v1.0/precipitation : I converted the query results from my precipitation analysis (i.e. retrieving only the last 12 months of data) to a dictionary,
-    * /api/v1.0/stations : This shows a list of stations from the dataset.
-    * /api/v1.0/tobs : I made a query for the dates and temperature observations of the most-active station for the previous year of data.
-    * /api/v1.0/temp/<start> : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for all the dates greater than or equal to the specified start date.
-    * /api/v1.0/temp/<start>/<end> : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for a specified start date and end date, calculating TMIN, TAVG, and TMAX for those dates from the start date to the end date, inclusive.
+    - / : This is the homepage, where all the available routes are listed.
+    - /api/v1.0/precipitation : I converted the query results from my precipitation analysis (i.e. retrieving only the last 12 months of data) to a dictionary,
+    - /api/v1.0/stations : This shows a list of stations from the dataset.
+    - /api/v1.0/tobs : I made a query for the dates and temperature observations of the most-active station for the previous year of data.
+    - /api/v1.0/temp/<start> : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for all the dates greater than or equal to the specified start date.
+    - /api/v1.0/temp/<start>/<end> : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for a specified start date and end date, calculating TMIN, TAVG, and TMAX for those dates from the start date to the end date, inclusive.
 
 Data Analysis
 
