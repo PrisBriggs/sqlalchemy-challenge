@@ -40,12 +40,12 @@ Part 1: Analyzing and Exploring the Climate Data
 
 Part 2: Designing My Climate App
     In this section, I designed a Flask API based on the queries that I developed. I used the following routes:
-    - 1st route: / : This is the homepage, where all the available routes are listed.
-    - 2nd route: /api/v1.0/precipitation : I converted the query results from my precipitation analysis (i.e. retrieving only the last 12 months of data) to a dictionary,
-    - 3rd route: /api/v1.0/stations : This shows a list of stations from the dataset.
-    - 4th route: /api/v1.0/tobs : I made a query for the dates and temperature observations of the most-active station for the previous year of data.
-    - 5th route: /api/v1.0/temp/<start> : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for all the dates greater than or equal to the specified start date.
-    - 6th route: /api/v1.0/temp/<start>/<end> : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for a specified start date and end date, calculating TMIN, TAVG, and TMAX for those dates from the start date to the end date, inclusive.
+    - 1st route: "/" : This is the homepage, where all the available routes are listed.
+    - 2nd route: "/api/v1.0/precipitation" : I converted the query results from my precipitation analysis (i.e. retrieving only the last 12 months of data) to a dictionary,
+    - 3rd route: "/api/v1.0/stations" : This shows a list of stations from the dataset.
+    - 4th route: "/api/v1.0/tobs" : I made a query for the dates and temperature observations of the most-active station for the previous year of data.
+    - 5th route: "/api/v1.0/temp/<start>" : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for all the dates greater than or equal to the specified start date.
+    - 6th route: "/api/v1.0/temp/<start>/<end>" : Shows a list of the minimum temperature, the average temperature, and the maximum temperature for a specified start date and end date, calculating TMIN, TAVG, and TMAX for those dates from the start date to the end date, inclusive.
 
 Data Analysis
 
